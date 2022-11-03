@@ -7,6 +7,9 @@ This is Monumental's fork of https://github.com/adjust/unity_sdk. At the time of
 - Deletion of two Json.net DLLs included in the repo that conflict with standalone copies
   - If your project does not have a standalone copy of that package it should be added to your project via UPM: com.unity.nuget.newtonsoft-json
 - Modified AdjustSettings.cs to generate the AdjustSettings.asset scriptable object at /Assets/Editor/Adjust/ rather than within the package where it is immutable
+- Deleted Adjust/Test, Adjust/Android/Test, Adjust/iOS/Test, and Adjust/Windows/Test
+  - iOS/Test caused a build failure, deleted the rest to be thorough
+
 
 **To add this to your project:**
 
